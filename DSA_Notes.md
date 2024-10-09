@@ -18,6 +18,54 @@
 14. [Divide and Conquer](#14-divide-and-conquer)
 
 ---
+---
+
+## Data Structure Operations Cheat Sheet
+
+### Time Complexity (Average and Worst Case)
+
+| Data Structure                 | Access (Average) | Search (Average) | Insertion (Average) | Deletion (Average) | Access (Worst) | Search (Worst) | Insertion (Worst) | Deletion (Worst) |
+|---------------------------------|------------------|------------------|---------------------|--------------------|----------------|----------------|-------------------|------------------|
+| **Arrays**                      | O(1)             | O(n)             | O(n)                | O(n)               | O(1)           | O(n)           | O(n)              | O(n)             |
+| **Stacks**                      | O(n)             | O(n)             | O(1)                | O(1)               | O(n)           | O(n)           | O(1)              | O(1)             |
+| **Queues**                      | O(n)             | O(n)             | O(1)                | O(1)               | O(n)           | O(n)           | O(1)              | O(1)             |
+| **Binary Trees**                | O(log n)         | O(log n)         | O(log n)            | O(log n)           | O(n)           | O(n)           | O(log n)          | O(log n)         |
+| **Binary Search Trees**         | O(log n)         | O(log n)         | O(log n)            | O(log n)           | O(n)           | O(n)           | O(log n)          | O(log n)         |
+| **Balanced Binary Search Trees**| O(log n)         | O(log n)         | O(log n)            | O(log n)           | O(log n)       | O(log n)       | O(log n)          | O(log n)         |
+| **Hash Tables**                 | O(1)             | O(1)             | O(1)                | O(1)               | O(n)           | O(n)           | O(n)              | O(n)             |
+
+Note: For best-case operations, the time complexities are O(1).
+
+---
+
+## Sorting Algorithms Cheat Sheet
+
+### Time and Space Complexity
+
+| Sorting Algorithm | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (Worst) | Space Complexity | Stable? | Sorting Class |
+|-------------------|------------------------|---------------------------|-------------------------|------------------|---------|---------------|
+| **Bubble Sort**    | O(n)                   | O(n^2)                    | O(n^2)                  | O(1)             | Yes     | Comparison    |
+| **Insertion Sort** | O(n)                   | O(n^2)                    | O(n^2)                  | O(1)             | Yes     | Comparison    |
+| **Selection Sort** | O(n^2)                 | O(n^2)                    | O(n^2)                  | O(1)             | Yes     | Comparison    |
+| **Merge Sort**     | O(n log n)             | O(n log n)                | O(n log n)              | O(n)             | Yes     | Comparison    |
+| **Heap Sort**      | O(n log n)             | O(n log n)                | O(n log n)              | O(1)             | No      | Comparison    |
+| **Quick Sort**     | O(n log n)             | O(n log n)                | O(n^2)                  | O(log n)         | No      | Comparison    |
+| **Tree Sort**      | O(n log n)             | O(n log n)                | O(n^2)                  | O(n)             | Yes     | Comparison    |
+| **Counting Sort**  | O(n + k)               | O(n + k)                  | O(n + k)                | O(k)             | Yes     | Linear        |
+| **Bucket Sort**    | O(n + k)               | O(n + k)                  | O(n^2)                  | O(n)             | Yes     | Linear        |
+| **Radix Sort**     | O(dn)                  | O(dn)                     | O(dn)                   | O(d + n)         | Yes     | Linear        |
+
+### Remarks
+
+- Bubble Sort is not a preferred sorting algorithm.
+- In the best case (already sorted), every insertion in Insertion Sort requires constant time.
+- Even a perfectly sorted array requires scanning the entire array in Selection Sort.
+- Merge Sort requires O(n) space for arrays but constant space for linked lists.
+- Heap Sort can achieve constant space if the input array is used as storage for the heap.
+- Quick Sort can avoid the worst-case scenario by randomly selecting a pivot.
+- Tree Sort involves an in-order traversal of a balanced binary search tree.
+- Counting Sort and Radix Sort are linear if the range of elements is small compared to the number of elements.
+
 
 ## 1. Introduction
 - **Data Structures** organize and store data efficiently.
