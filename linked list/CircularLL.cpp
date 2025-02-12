@@ -81,6 +81,7 @@ void deleteNode(Node* &tail, int value) {
         //non-empty
 
         //assuming that "value" is present in the Linked List
+        // if you take the prev=NULL and curr= tail or atart you will stuck in the loop and result wrong output
         Node* prev = tail;
         Node* curr = prev -> next;
 
